@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefa 1</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#section1">Elementos de mídia</a></li>
+            <li><a href="#section2">Conceitos</a></li>
+            <li><a href="#sectionVideo">3035Tech</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="section1">
+            <h1>Elementos de mídias: vídeos, imagens e áudios</h1>
+            <p>
+                O HTML oferece suporte a diversos elementos de mídia que permitem incorporar conteúdo
+                multimídia em páginas web. Vamos explorar os elementos mais comuns para inserir
+                imagens, vídeos e áudios em um documento HTML, além de entender como controlar e
+                personalizar esses elementos.
+            </p>
+            <h4>Imagem</h4>
+            <p>
+                O elemento <mark>&lt;img&gt;</mark> é usado para incorporar imagens em uma página web. A tag <mark>&lt;img&gt;</mark> não
+                possui uma tag de fechamento, pois é um elemento vazio, o que significa que não contém
+                conteúdo.
+            </p>
+            <pre> 
+                &lt;img src="caminho_da_imagem.jpg" alt="Descrição da imagem" &gt;
+            </pre>
+            <p>
+                O atributo "src" especifica o caminho da imagem e o “alt”, é um texto alternativo, que é
+                exibido caso a imagem não possa ser carregada ou para acessibilidade.
+            </p>
+            <h4>Video</h4>
+            <p>
+                O elemento <mark>&lt;video&gt;</mark> é usado para incorporar conteúdo de vídeo em uma página web. É
+                possível adicionar várias fontes de vídeo usando as tags <mark>&lt;source&gt;</mark>, permitindo que o
+                navegador selecione a melhor opção compatível.    
+            </p>
+            <pre>
+                &lt;video width="640" height="360" controls&gt;
+                    &lt; source src="video.mp4" type="video/mp4"&gt;
+                    &lt; source src="video.webm" type="video/webm"&gt;
+                &lt;/video&gt;    
+            </pre>
+            <p>
+                Assim, o navegador selecionará a primeira fonte suportada.
+                O atributo “controls” exibe os controles de reprodução padrão do navegador, como play,
+                pause e volume.
+            </p>
+            <h4>Audio</h4>
+            <p>
+                Para adicionar áudios em uma página web, usamos a tag <mark>&lt;audio&gt;</mark>, e assim como o vídeo,
+                podemos adicionar várias fontes de áudio usando as tags <mark>&lt;source&gt;</mark>
+            </p>
+            <pre>       
+                &lt;audio controls&gt;
+                    &lt;src="audio.mp3" type="audio/mpeg"&gt;
+                    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+                &lt;/audio&gt;
+            </pre>
+        </section>
+        <section id="section2">
+            <h1>Conceitos</h1>
+            <p>
+                Quando acessamos uma página na web, encontramos diferentes conteúdos para
+                interagirmos (textos, imagens, botões, caixas de texto e etc.). Para existirem, os websites
+                são construídos em uma linguagem de marcação chamada HTML que define os
+                elementos e as estruturas das páginas.
+                Os navegadores que utilizamos (Google Chrome, Mozilla Firefox, Opera, Safari, entre
+                outros) são responsáveis por interpretar o código HTML e renderizar os elementos em tela
+                para o usuário.
+            </p>
+            <h4>Uma linguagem de marcação</h4>
+            <p>
+                Diferente das linguagens de programação e algoritmos que seguem uma lógica (revise o
+                conceito de programação nos Fundamentos de Programação), o HTML apenas “marca”
+                quais elementos farão parte da página. Chamamos cada marcação do código de tags.
+                Imagine que essas tags estão destacando qual e onde o elemento será exibido, como se
+                fossem post-its.
+            </p>
+        </section>
+        <section id="sectionVideo">
+            <h1>3035Tech</h1>
+            <video controls="controls" height="400px">
+                <source src="./video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+    <footer>
+        &copy;3035Tech
+    </footer>
+</body>
+</html>
